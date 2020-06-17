@@ -1,0 +1,304 @@
+<!DOCTYPE html >
+<html lang = "en" >
+    <head >
+        <meta charset = "utf-8" >
+        <meta name = "viewport" content = "width=device-width, initial-scale=1, shrink-to-fit=no" >
+        <meta name = "description" content = "The HTML report">
+        <meta name = "author" content = "Raphael Ellul Falzon" >
+
+        <title>HTML-Game-Report</title>
+
+        <!--Bootstrap core CSS-->
+        <link rel = "stylesheet" href = "css/bootstrap.min.css" >
+        <!--Custom CSS Sheet-->
+        <link href = "css/main.css" rel = "stylesheet" >
+        <!--Custom fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Audiowide|Raleway" rel="stylesheet">
+          <!--Font Awesome-->
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+    </head >
+
+    <body>
+    <!-- Page Content -->
+        <div class="container">
+            <div class="container shadow p-3 mb-5 bg-white rounded mt-5">
+                <!-- Page Heading -->
+                <h1 class="text-capitalize text-center mt-5 display-2 top-word">HTML Report</h1>
+                <h2 class = "text-center text-capitalize text-black-50">Raphael Ellul Falzon</h2>
+                  <div class="row m-3">
+                    <div class="col-md-12">
+                        <h3 class="display-4 text-center">A basic game that the user can play and obtain a score in</h3>
+                        <p class="lead display-5 text-capitalize">The basic features of the game are listed below</p>
+                        <ol>
+                            <li class="list-group-item">-> The main goal of the game is to kill monsters, level up and reach higher floors</li>
+                            <li class="list-group-item">-> Whenever the player touches a portal he travels to the next floor. Every floor increases the stats of spawned monsters</li>
+                            <li class="list-group-item">-> The player's score that is logged in the hi-scores is the maximum map(floor level) reached</li>
+                            <li class="list-group-item">-> The player may attack with a close range melee attack that uses no mana or else with different spells</li>
+                            <li class="list-group-item">-> The player has 4 different spells that he may cycle through. Each has different mana requirements and does different damage</li>
+                            <li class="list-group-item">-> Enemies have a chance of dropping different types of potions which give the player permanent stat increases</li>
+                            <li class="list-group-item">-> The player may heal by picking up potions or by using the heal spell</li>
+                            <li class="list-group-item">-> The player may level up an infinite amount of times</li>
+                            <li class="list-group-item">-> The player must find gold across the maps</li>
+                            <li class="list-group-item">-> Gold is used to level up abilities upon death</li>
+                            <li class="list-group-item">-> Upon death the player starts from map(floor) level 1 but retains his experience gains, gold and levelled up stats</li>
+                            <li class="list-group-item">-> The player may view instructions for the game by clicking the "view instructions" button in the main-menu </li>
+                            <li class="list-group-item">-> A dragon spawns every 5th floor with increased stats and drops</li>
+                        </ol>
+                          <h3 class="display-4 text-center mb-5">Video showing basic gameplay</h3>
+                    </div>
+                      <div class="mx-auto">
+                          <video width="720" height="480" controls>
+                              <source src="assets/video/basic-game-play.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                          </video>
+                      </div>
+                    <div>
+                        <div class="row">
+                            <div class="col-xl-18 col-md-20 mx-auto">
+                                <div class="screenshot">
+                                    <h2 class="text-center mb-5 mt-5">
+                                        Location of code (main folder)
+                                    </h2>
+                                    <img class="img-fluid rounded mb-3 mb-md-5" src="assets/img/jsfolder.png" alt="">
+                                </div>
+                                <div class="screenshot">
+                                    <h2 class="text-center mb-5">
+                                        Location of code (game.js)
+                                    </h2>
+                                    <img class="img-fluid rounded mb-3 mb-md-5" src="assets/img/game.png" alt="">
+                                </div>
+                                <div class="screenshot">
+                                    <h2 class="text-center mb-5">
+                                        Location of code (boot.js)
+                                    </h2>
+                                    <img class="img-fluid rounded mb-3 mb-md-5" src="assets/img/boot.png" alt="">
+                                </div>
+                                <div class="screenshot">
+                                    <h2 class="text-center mb-5 mt-4">
+                                        Location of code (preloader.js)
+                                    </h2>
+                                    <img class="img-fluid rounded mb-3 mb-md-5" src="assets/img/preloader.png" alt="">
+                                </div>
+                                <div class="screenshot">
+                                    <h2 class="text-center mb-5">
+                                        Location of code (shop.js)
+                                    </h2>
+                                    <img class="img-fluid rounded mb-3 mb-md-5" src="assets/img/shop.png" alt="">
+                                </div>
+                                <div class="screenshot">
+                                    <h2 class="text-center mb-5">
+                                        Location of code (main-menu.js)
+                                    </h2>
+                                    <img class="img-fluid rounded mb-3 mb-md-5" src="assets/img/main-menu.png" alt="">
+                                </div>
+                                <div class="screenshot">
+                                    <h2 class="text-center mb-5">
+                                        Location of code (main.js)
+                                    </h2>
+                                    <img class="img-fluid rounded mb-3 mb-md-5" src="assets/img/main.png" alt="">
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h3 class="display-4 text-center mb-5 mt-5">Instances where advanced JavaScript such as Objects and Arrays are used</h3>
+                            <div class="col-md-4">
+                                <h4>Creating Attacks - game.js line 515</h4>
+                                <p>An attack group/object is created. Different parameters are given to the attack group such as animations, rate of attack, range and physics. Every time the player
+                                or creatures attack an instance is created of this object. Different parameters are applied to this instance depending on the type of attack performed. For example
+                            	a spell will have different animations play. Having one group for all attacks simplifies the code needed to code attacks.</p>
+                            </div>
+                            <div class="col-md-8 text-right">
+                                <img class="img-fluid rounded mb-3 mb-md-0" src="assets/img/create-attacks.png" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h4>Generating the game world - game.js line 1391</h4>
+                                <p>The game world is split into a large array of squares. Every square is 32x32 pixels. The array is looped through and each of these grid squares is shuffled inside of the array and re-assigned randomly, thus giving them random indices. When placing objects such as trees inside of the world map the locations to which they are assigned will be the indexes of these random grid squares inside of the array. </p>
+                            </div>
+                            <div class="col-md-8 text-right">
+                                <img class="img-fluid rounded mb-3 mb-md-0 mt-3" src="assets/img/create-world.png" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h4>Creating enemies - game.js line 741</h4>
+                                <p>An enemies object is first created. Every created creature is an instantiation of this object. The random math class is used to determine what type of creature will be instantiated. Different creatures have different animations and stats assigned. Enemies are placed randomly throughout the world map</p>
+                            </div>
+                            <div class="col-md-8 text-right">
+                                <img class="img-fluid rounded mb-3 mb-md-0 mt-3" src="assets/img/create-enemies.png" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h4>Cycling through spells - game.js, line 1195</h4>
+                                <p>An array holds the names of the different unlocked spells the player owns. This is found inside of game.js. Whenever the player presses the spacebar a loop will go through the array and find the name of the spell name at the next index. The spell name will be matched inside of the if statements and the image will be changed to the appropriate spell. The spell cost and mana cost of the spell will also change. An if statement at the bottom of the code block ensures that once the end of the array is reached, the loop will start at the beginning once again.</p>
+                            </div>
+                            <div class="col-md-8 text-right">
+                                <img class="img-fluid rounded mb-3 mb-md-0 mt-3" src="assets/img/cycle-spells.png" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h4>Creating dynamic status bars - game.js line 1240</h4>
+                                <p>The health/mana/xp bars work by creating rectangles which are cropped by a certain percentage of its maximum length. The percentage is determined through simple division. For example to figure out the player's current health and apply that to the health bar the equation (in pseudocode) "(Player health/Max player health) *(maximum rectangle length)" would be applied. </p>
+                            </div>
+                            <div class="col-md-8 text-right">
+                                <img class="img-fluid rounded mb-3 mb-md-0 mt-3" src="assets/img/status-bars.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <hr>
+                            <h3 class="display-4 text-center">Advanced Game Features</h3>
+                            <p class="lead">Advanced game features include the following</p>
+                            <div class="list-group">
+                                <div class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h4 class="mb-1">Five types of monsters with walking animations in all 4 directions. game.js - lines 777 - 840</h4>
+                                    </div>
+                                    <p class="mb-1">Different animations are applied to monsters depending on what direction they are travelling in</p>
+                                </div>
+                                <div href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h4 class="mb-1">Animated player with animations in 4 different directions. game.js - line 690+</h4>
+                                    </div>
+                                    <p class="mb-1">Different animations are applied to the player depending on which direction he is travelling in</p>
+                                </div>
+                                <div href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h4 class="mb-1">Four different types of animated spells game.js - line 1195+</h4>
+                                    </div>
+                                    <p class="mb-1">Different animations are applied to the spells depending on the spell name. Each has different mana costs and damage. They also have different hit boxes.Every spell has a different icon displayed in the GUI when selected</p>
+                                </div>
+                                <div href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h4 class="mb-1">Different sound effects - game.js - lines 1035-1050</h4>
+                                    </div>
+                                    <p class="mb-1">Different music is used for the main memnu, shop menu and gameplay. Different sound effects are used depending on what momnstter is hit by an attack. Different sound effects are used for melee attacks and spells. Different sound effects are used depending on whether coins or a potion is picked up. A sound effect plays when the player levels up</p>
+                                </div>
+                                <div href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h4 class="mb-1">Different floors - game.js - line 604</h4>
+                                    </div>
+                                    <p class="mb-1">Every time the player finds a portal and goes through it the player advances to a new randomly generated floor. The stats of every monster increase, thus increasing the difficulty of the game and making it harder for the player to reach higher floors and thus higher scores</p>
+                                </div>
+                                <div href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h4 class="mb-1">Tooltips - game.js - lines 581-589</h4>
+                                    </div>
+                                    <p class="mb-1">Whenever the player or a monster suffers damage the damage is shown on top of the character/monster and fades away slowly. Whenever the player opens a chest the gold obtained also shows up as a tooltip. When the player levels up a tooltip is shown congratulating the player on levelling up</p>
+                                </div>
+                                <div href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h4 class="mb-1">Different player and monster stats - game.js, used throughout</h4>
+                                    </div>
+                                    <p class="mb-1">The player has Wisdom, Strength, Vitality, Speed, maximum mana, health and mana while monsters have strength, speed, health, vitality, and exp they give on death. Strength determines the melee damage,attack speed, splash damage and attack range.Wisdom determines mana regeneration, health healed by healing spells, spell damage and spell size.Speed determines movement and attack speed.Vitality determines the player's maximum health</p>
+                                </div>
+                                <div href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h4 class="mb-1">Randomised terrain creation - game.js, lines 39-58</h4>
+                                    </div>
+                                    <p class="mb-1">Every time the player advances a floor the terrrain may be generated as a desert, a snowy area, a forest, wastelands, cracked earth or cracked desert</p>
+                                </div>
+                                <div href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h4 class="mb-1">The possibility of rain game.js, lines 162-186</h4>
+                                    </div>
+                                    <p class="mb-1">Every time a map is created there is a 30% chance of it raining</p>
+                                </div>
+                                <div href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h4 class="mb-1">Limitless progression feature - shop.js</h4>
+                                    </div>
+                                    <p class="mb-1">Whenever the player dies he may spend gold to increase his stats. Every level increases the gold cost of that skill. Upon resurrecting the player starts again from Floor 1 but retains his experience gains, gold and stat gains</p>
+                                </div>
+                                <div href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h4 class="mb-1">Ability to mute the game - game.js, lines 1079-1105</h4>
+                                    </div>
+                                    <p class="mb-1">The player may mute and unmute the game at any time by clicking the mute button</p>
+                                </div>
+                                <div href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h4 class="mb-1">Ability to view in-game stats game.js, lines 1171 - 1189</h4>
+                                    </div>
+                                    <p class="mb-1">Holding the 'Q' button will display the player's 4 main statistics at the top of the screen</p>
+                                </div>
+                                <h3 class="display-4 text-center mb-5">Video showing advanced game features</h3>
+			                      	<div class="mx-auto">
+			                          <video width="720" height="480" controls>
+			                              <source src="assets/video/advanced-features.mp4" type="video/mp4">
+			                              Your browser does not support the video tag.
+			                          </video>
+			                      </div> 
+                            </div>
+                        <hr class="mt-4">
+                    </div>
+                        <div class="row">
+                                <h3 class="display-4 text-center mx-auto mb-5">User Registration and Javascript validation</h3>
+			                      	<div class="mx-auto">
+			                          <video width="720" height="480" controls>
+			                              <source src="assets/video/user-registration-video.mp4" type="video/mp4">
+			                              Your browser does not support the video tag.
+			                          </video>
+			                      </div> 
+			                       <h3 class="display-4 text-center mx-auto mb-5 mt-5">User Login and Javascript validation</h3>
+			                      	<div class="mx-auto">
+			                          <video width="720" height="480" controls>
+			                              <source src="assets/video/login-validation-video.mp4" type="video/mp4">
+			                              Your browser does not support the video tag.
+			                          </video>
+			                      </div> 
+			                      <div class="screenshot">
+                                    <h3 class="display-4 text-center mx-auto mb-5 mt-5">Storing user data in local storage in JSON format(login-handler.js line 119)</h3>
+                                    <img class="img-fluid rounded mb-3 mb-md-5" src="assets/img/json-registered-user.png" alt="">
+                                </div>
+                                 <div class="screenshot">
+                                    <h3 class="display-4 text-center mx-auto mb-5 mt-5">Storing user scores in local storage in JSON format (game.js line 1373)</h3>
+                                    <img class="img-fluid rounded mb-3 mb-md-5" src="assets/img/scores-json.png" alt="">
+                                </div>
+       	                        <h3 class="display-4 text-center mx-auto mb-5 mt-5">Updating ranking table and location of code</h3>
+			                   	<div class="mx-auto">
+			                        <video width="720" height="480" controls>
+			                              <source src="assets/video/hi-scores-updating.mp4" type="video/mp4">
+			                              Your browser does not support the video tag.
+			                        </video>
+			                    </div>
+	                            <div class="screenshot">
+                                    <h3 class="display-4 text-center mx-auto mb-5 mt-5">Score sorting code (inside of hi-score.js line 26)</h3>
+                                    <img class="img-fluid rounded mb-3 mb-md-5" src="assets/img/sort.png" alt="">
+                                </div> 
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <hr class="my-4">
+                                                <h3 class="display-4 text-center mb-4">What third party libraries did you use?</h3>
+                                                <p class="lead ml-3">The third party library used is shown below</p>
+                                                <div class="list-group">
+                                                    <div class="list-group-item list-group-item-action flex-column align-items-start">
+                                                        <div class="d-flex w-100 justify-content-between">
+                                                            <h4 class="mb-1">Phaser</h4>
+                                                        </div>
+                                                        <p class="mb-1">The phaser website:<a target="blank" href = "https://phaser.io/">https://phaser.io/</a>. Phaser is a 2D game framework. It is a library with pre-created functions that are often
+                                                            used inside of game development. The main features used are the following; Phaser was used to preload assets to ensure smooth running of the game. The framework was used to apply physics to objects, apply collision to objects, add animations to sprites, manipulate the camera and create emitters when the player levels
+                                                            up or whenever a projectile hits an enemy.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer -->
+                    <footer class="py-5 bg-dark">
+                        <div class="container  bg-dark">
+                            <p class="m-0 text-center text-white  bg-dark">Copyright &copy; Raphael Ellul Falzon 2018</p>
+                        </div>
+                    </footer>
+                </body>
+        </html>

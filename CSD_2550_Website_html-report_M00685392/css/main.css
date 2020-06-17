@@ -1,0 +1,79 @@
+
+/*|||///Code For General Stylings\\\|||*/
+
+
+body {
+    font-family: 'Raleway', serif;
+    letter-spacing: 0.0625em;
+    background: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+}
+
+.container {
+
+    max-width: 92%;
+}
+.top-word {
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 1;
+    text-shadow: #EDEDED 3px 2px 0;
+    position: relative;
+}
+
+ol {
+    padding-left:0;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: -3px;
+    line-height: 1;
+    text-shadow: #EDEDED 3px 2px 0;
+    position: relative;
+}
+
+.screenshot{
+width:90%;
+    margin:auto;
+}
+
+hr {
+    overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+hr:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+span {
+    display: inline-block;
+    position: relative;
+}
+
+h2,h3 {
+    color:darkgoldenrod;
+}
+
+h4 {
+    color:#0B7DB8;
+}

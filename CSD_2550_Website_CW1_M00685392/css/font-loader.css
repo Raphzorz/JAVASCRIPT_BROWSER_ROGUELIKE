@@ -1,0 +1,13 @@
+@font-face {
+	font-family: "flipps-regular";
+	font-style: normal;
+	font-weight: 300;
+	src: url('../assets/fonts/flipps-regular.otf');
+}
+
+@font-face {
+	font-family: "pixelex";
+	font-style: normal;
+	font-weight: 300;
+	src: url('../assets/fonts/pixelex.ttf');
+}
